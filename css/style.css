@@ -15,7 +15,7 @@ body{
 }
 .header {
 	background: #21C9F3;
-	padding: 2.5em 0;
+	padding: 0.5em 0;
 }
 .header-logo{
 	float:left;
@@ -40,7 +40,7 @@ body{
 }
 .top-nav ul li a{
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 500;
 	color: #fff;
 	position: relative;
@@ -87,22 +87,22 @@ span.menu {
   display: none;
 }
 .banner1{
-	background: url(../images/banner.jpg) no-repeat 0px 0px;
+	background: url(../images/banner1.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	min-height: 873px;
 }
 .banner2{
-	background: url(../images/img1.jpg) no-repeat 0px 0px;
+	background: url(../images/banner2.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	min-height: 873px;
 }
 .banner3{
-	background: url(../images/img2.jpg) no-repeat 0px 0px;
+	background: url(../images/banner3.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	min-height: 873px;
 }
 .banner4{
-	background: url(../images/img3.jpg) no-repeat 0px 0px;
+	background: url(../images/banner4.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	min-height: 873px;
 }
