@@ -1,9 +1,4 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 body{
 	margin:0;
 	font-family: 'Titillium Web', sans-serif;
@@ -14,20 +9,23 @@ body{
 	-moz-transition: 0.5s all;
 }
 .header {
-	background: #21C9F3;
-	padding: 0.5em 0;
+	background: #21C9F3;	
 }
 .header-logo{
 	float:left;
 	width: 16%;
+
+}
+.imgRounded {
+    border-radius: 56px;
 }
 .header-logo a {
   display: block;
 }
 .top-nav{
 	float: right;
-	width: 69%;
-	margin-top: .6em;
+	 width: 69%;
+	margin-top: 1.0em;
 }
 .top-nav ul{
 	margin: 0;
@@ -40,13 +38,13 @@ body{
 }
 .top-nav ul li a{
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 500;
 	color: #fff;
 	position: relative;
 	letter-spacing: 1px;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	font-family: 'Pathway Gothic One', sans-serif;
+	/*  font-family: 'Pathway Gothic One', sans-serif;  */
 	padding: 1.5em .6em 1.45em .6em;
 	transition:.5s all;
 }
@@ -87,36 +85,39 @@ span.menu {
   display: none;
 }
 .banner1{
-	background: url(../images/banner1.jpg) no-repeat 0px 0px;
-	background-size: cover;
-	min-height: 873px;
+	background: url(../images/banner.jpg) no-repeat 0px 0px;
+ 	background-size: cover; /* 为了响应式图片还能够扩展至足够大，是背景图像完全覆盖 */
+	min-height: 550px;
 }
 .banner2{
-	background: url(../images/banner3.jpg) no-repeat 0px 0px;
-	background-size: cover;
-	min-height: 873px;
+	background: url(../images/img1.jpg) no-repeat 0px 0px;
+	 background-size: cover; 
+	min-height: 550px;
 }
 .banner3{
-	background: url(../images/banner5.jpg) no-repeat 0px 0px;
-	background-size: cover;
-	min-height: 873px;
+	background: url(../images/img2.jpg) no-repeat 0px 0px;
+	 background-size: cover; 
+	min-height: 550px;
 }
 .banner4{
-	background: url(../images/banner2.jpg) no-repeat 0px 0px;
+	background: url(../images/img3.jpg) no-repeat 0px 0px;
 	background-size: cover;
-	min-height: 873px;
+	min-height: 550px;
 }
 .banner-title {
-	width: 38%;
+	width: 30%;
 	position: absolute;
-	top: 30%;
-	left: 10%;
+	top: 2%;
+	left: 1%;
 }
-.bnr-top-text {
-	padding: 1.5em 2em;
-	background: rgba(255, 255, 255, 0.52);
-	width: 57%;
+.bnr-top-text{
+	padding: .5em .5em;
+    background: rgba(11, 219, 245, 0.52);
+    width: 100%;
+    text-indent: 5em;
+    word-spacing: 1em;
 }
+    
 .bnr-top-text h1 {
 	margin: 0;
 	color:#000;
@@ -125,7 +126,7 @@ span.menu {
 	font-weight: 700;
 }
 .bnr-bottom-text {
-	padding: 2em 2em 2em 3em;
+	padding: 1em 1em 1em 3em;
 	background: rgba(242, 180, 12, 0.51);
 	position:relative;
 }
@@ -135,7 +136,7 @@ span.menu {
 	margin:0;
 	font-size: 25px;
 	font-weight: 500;
-	width: 40%;
+	width: 100%;
 }
 .arrow {
 	background: #f5b303;
@@ -304,9 +305,10 @@ span.menu {
 		position: absolute;
 		bottom: 0.2%;
 		z-index: 111;
-		left: 0%;
+		left: 45%;
 		padding: 0;
 		margin: 0;
+		border-radius: 50px;
 }
 .slider-top{
 	text-align: center;
@@ -411,7 +413,7 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
 .about {
 	background: #f5b303;
 	text-align:center;
-	padding: 4em 0;
+	padding: 1em 0;
 }
 .about-text {
   position: relative;
@@ -422,13 +424,13 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
 	font-size: 2.8em;
 	font-weight: 500;
 	font-family: 'Pathway Gothic One', sans-serif;
-	padding-bottom: 1.5em;
+	padding-bottom: .5em;
 	text-shadow: 2px -3px #C0BFC8;
 }
 .about span.abt-trngl {
 	background: url(../images/icon7.png) no-repeat 0px 0px;
-	width: 185px;
-	height: 84px;
+	width: 180px;
+	height: 80px;
 	display: block;
 	text-align: center;
 	position: absolute;
@@ -446,21 +448,21 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
   position: relative;
 }
 .about-team {
-	padding: 7em 0 3em 0;
+	padding: 2em 0 3em 0;
 	position: relative;
 }
 .about-team h4 {
 	color: #fffefc;
-	margin: 0 0 1.5em 0;
-	font-size: 3.5em;
+	margin: 0 0 0.5em 0;
+	font-size: 3.0em;
 	font-weight: 600;
 	font-family: 'Pathway Gothic One', sans-serif;
 }
 .about-team span.undln {
 	position: absolute;
-	top: 23%;
-	left: 45.6%;
-	width: 9%;
+	top: 15%;
+	left: 40.6%;
+	width: 20%;
 	height: 3px;
 	background: rgb(255, 252, 148);
 	content: '';
@@ -478,7 +480,7 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
 .team-text {
   text-align: left;
   background:#fff;
-  padding: 1em 1em 2em 1.5em;
+  padding: 1em 1em 1em 1.5em;
   box-shadow: 0px 5px rgba(17, 17, 16, 0.24);
 }
 .team-text h5 {
@@ -486,6 +488,7 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
   margin: 0 0 6px 0;
   font-size: 2.0em;
   font-weight: 600;
+ white-space:nowrap;
   font-family: 'Pathway Gothic One', sans-serif;
 }
 .team-text h6 {
@@ -516,6 +519,7 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
 .about-team-grids:hover div.abt-team-caption {
 	display:block;
 }
+
 .services {
   background: #e7e6f0;
   padding: 3em 0 10em 0;
@@ -915,19 +919,20 @@ select#selectThis {
 	padding: 3em 0;
 }
 .footer-left{
-	width: 6%;
-	float: left;
+	width: 16%;
+     margin-top: 1px;
+		float: left;
 	margin: 0 !important;
 }
 .footer-right{
 	width:70%;
-	float:right;
+	margin:auto;
 }
 .footer-right p{
 	color: #fff;
 	font-size: 22px;
 	font-weight: 500;
-	text-align: right;
+	text-align: center;
 	margin: .6em 0 0;
 }
 .footer-right p a{
@@ -937,6 +942,37 @@ select#selectThis {
 }
 .footer-right p a:hover{
 	color:#f5b303;
+}
+.footer-bottom {
+	float: left;
+	width: 100%;
+	height:100px;
+   
+}
+.footer-bottom ul{
+	margin: 1.5em;
+	padding: 0;
+	height:90px;	
+}
+.footer-bottom ul li{
+	list-style-type: none;
+	display: block;
+	float:left;
+	padding: .5em ;
+	font-size: 24px;
+	font-weight: 500;
+	color: #e7e6f0;
+	letter-spacing: 1px;
+	margin-left: 10%;
+	
+}
+.footer-bottom ul li a{
+	text-decoration: none;
+	color: #e7e6f0;	
+	transition:.5s all;
+}
+.footer-bottom ul li a:hover{
+	opacity: .6;
 }
 /*--slider-up-arrow--*/
 #toTop {
@@ -982,17 +1018,17 @@ img.zoom-img:hover {
 /*---- responsive-design -----*/
 @media(max-width:1440px){
 .banner-title {
-  width: 43%;
+  width: 40%;
 }
 }
 @media(max-width:1366px){
 .banner-title {
-  width: 45%;
+  width: 35%;
 }
 }
 @media(max-width:1280px){
 .banner-title {
-  width: 48%;
+  width: 30%;
 }
 }
 @media(max-width:1024px){
@@ -1015,7 +1051,7 @@ img.zoom-img:hover {
 }
 .banner-title {
 	width: 50%;
-	top: 28%;
+	top: 10%;
 	left: 6%;
 }
 .bnr-top-text h1 {
