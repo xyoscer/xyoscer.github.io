@@ -109,7 +109,7 @@ span.menu {
 .banner-title {
 	width: 38%;
 	position: absolute;
-	top: 20%;
+	top: 30%;
 	left: 10%;
 }
 .bnr-top-text {
@@ -133,9 +133,9 @@ span.menu {
 	color:#020000;
 	font-family: 'Titillium Web', sans-serif;
 	margin:0;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 500;
-	width: 67%;
+	width: 60%;
 }
 .arrow {
 	background: #f5b303;
