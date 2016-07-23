@@ -85,10 +85,11 @@ span.menu {
   display: none;
 }
 .banner1{
-	background: url(../images/img3.jpg) no-repeat 0px 0px;
- 	background-size: cover; /* 为了响应式图片还能够扩展至足够大，是背景图像完全覆盖 */
+	background: url(../images/1.jpg) no-repeat 0px 0px;
+ 	background-size: cover; 
 	min-height: 550px;
 }
+/* 为了响应式图片还能够扩展至足够大，是背景图像完全覆盖 */
 .banner2{
 	background: url(../images/img1.jpg) no-repeat 0px 0px;
 	 background-size: cover; 
@@ -100,7 +101,7 @@ span.menu {
 	min-height: 550px;
 }
 .banner4{
-	background: url(../images/banner.jpg) no-repeat 0px 0px;
+	background: url(../images/img3.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	min-height: 550px;
 }
