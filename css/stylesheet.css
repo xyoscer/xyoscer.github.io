@@ -26,17 +26,44 @@ a {
     box-shadow: 0px 5px 0px #00BCD4
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 1024px) {
   .page-header {
-    padding: 5rem 6rem; } }
+    padding: 20px 30px;
+     } 
+  .project-name {
+    font-size:50px ; 
+  }  
+  .main-content {
+    max-width: 1000px;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 20px; } 
+  }
 
-@media screen and (min-width: 42em) and (max-width: 64em) {
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
   .page-header {
-    padding: 3rem 4rem; } }
+    padding: 30px 40px; 
+  } 
+  .project-name {
+    font-size: 55px; 
+  }
+  .main-content {
+    padding: 15px ;
+    font-size: 22px; }
 
-@media screen and (max-width: 42em) {
+  }
+
+@media screen and (max-width: 1024px) {
   .page-header {
-    padding: 2rem 1rem; } }
+    padding: 10px 20px; 
+  }
+  .project-name {
+    font-size: 40px; 
+  }
+  .main-content {
+    padding: 20px;
+    font-size: 24px; } 
+     }
 
 .project-name {
   margin-top: 0;
@@ -69,53 +96,23 @@ a {
    transition: all .5s ease-in-out;
 }
 
-@media screen and (min-width: 64em) {
-  .project-name {
-    font-size: 3.25rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .project-name {
-    font-size: 2.25rem; } }
-
-@media screen and (max-width: 42em) {
-  .project-name {
-    font-size: 1.75rem; } }
-
 .main-content :first-child {
-  margin-top: 0; }
+  margin-top: 0; 
+}
 
 .main-content p {
-  margin-bottom: 1em; }
-
-@media screen and (min-width: 64em) {
-  .main-content {
-    max-width: 64rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .main-content {
-    padding: 2rem 4rem;
-    font-size: 1.1rem; } }
-
-@media screen and (max-width: 42em) {
-  .main-content {
-    padding: 2rem 1rem;
-    font-size: 1rem; } }
-
-
+  margin-bottom: 20px; 
+}
 
 .baidu-item {
-    display: inline-block;
-    width: 10rem;
-    height: 2rem;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
+    display: inline-block;   
+   padding:10px 80px;
+   margin-left: 5px;
+   margin-bottom: 15px;
     text-align: center;
-    border: .1rem solid rgba(78, 214, 208, 1);
+    border: 3px solid rgba(78, 214, 208, 1);
     color: #21C9F3;
-    border-radius: .8rem;
+    border-radius: 50px;
     box-shadow: 0px 0px 15px rgba(129, 145, 152, 1);
     transition: all .5s ease-in-out;
 }
@@ -127,10 +124,10 @@ a {
     color: white;
 }
 .title {
-    width: 25rem;
+    width: 500px;
     margin: 0 auto;
      text-align: center;
-    font-size: 3rem;
+    font-size: 50px;
     border-left: 3px solid #21C9F3;
     border-right: 3px solid #21C9F3;
    
