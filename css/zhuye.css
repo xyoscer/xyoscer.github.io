@@ -10,7 +10,7 @@ body{
 	    padding-top: 30 px;
         min-height: 800 px;	   
         background: #eabee9;
-        width: 100 % ;
+        width: 100%;
         z-index: 100;
         margin-right: auto;
         margin-left: auto;
@@ -29,6 +29,14 @@ header>ul{
   margin-top: 2%;
   list-style-type: none;
 
+}
+.response_ul{
+  width: 100%;
+  height:50px;
+  margin-left: 2%;
+  margin-top: 2%;
+  font-style: 20px;
+  list-style-type: none;
 }
 header>ul>li{
 	float:left;
@@ -55,10 +63,10 @@ header>ul>li>a:hover{
 	 margin-top: 30px;
 }
 .quote{
-	width:850px;
+	
 	color:#fff;
 	font-size: 35px;
-	margin-left: 20%;
+	margin-left: 5%;
     padding:10px;
     text-shadow: 1px 1px inset gray;
     text-align: center;
@@ -70,7 +78,7 @@ header>ul>li>a:hover{
 }
 
 #footer>ul{	
-  width: 60%;
+  width: 100%;
   height:100px;
   margin-left: 35%;
   padding-top: 100px;
@@ -90,3 +98,39 @@ header>ul>li>a:hover{
 	border-radius: 100%;
 	opacity: .8; 
 }
+ span{
+  display: none;
+ }
+@media screen and (min-width: 1024px) {
+  
+  }
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  
+
+  }
+
+@media screen and (max-width: 768px) {
+	span{
+		display: inline-block;
+	  }
+	  header>ul{
+       display: none;
+    }
+    .quote{	
+    font-size: 25px;
+	margin-left: 5%;   
+    word-spacing: 1px; 
+
+}
+#footer>ul{	
+ 
+  margin-left: 15%;
+
+}
+#footer>ul>li>a{
+	text-decoration: none;
+	display: block;
+	padding-right:35px;	
+}
+  }
