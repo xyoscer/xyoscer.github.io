@@ -10,8 +10,7 @@
         background-size:cover;       
         background-repeat:no-repeat; 
         overflow: hidden;     
-        position: relative;
-        min-width: 500px;      
+        position: relative;      
              
 }
 
@@ -35,8 +34,6 @@ ul>li>a{
 	color:#fff;
 	
 }
-
-
 header>ul>li>a:hover{
 	color:yellow;
 	border-bottom: 2px solid red;
@@ -66,7 +63,9 @@ header>ul>li>a:hover{
 	margin-top: 8%;
 	margin-left: 40%;
 }
-
+#footer>ul>li{
+	padding-right: 40px;
+}
 #footer>ul>li>a>img:hover{
 	background-color: #fff;
 	border-radius: 100%;
@@ -97,15 +96,25 @@ header>ul>li>a:hover{
 	  header>ul{
        display: none;
       }
+
       header{
       	width: 100%;
-	    margin-left: 25%; 
+	    margin-left: 15%; 
       }
+
     .quote{	
     font-size: 25px;
 	margin-left: 5%;   
-    word-spacing: 1px; 
-     }
+    word-spacing: 1px;
+    padding:5px; 
 
+     }
+   #footer{		
+	margin-top: 8%;
+	margin-left: 20%;
+} 
+   #footer>ul>li{
+	padding-right: 20px;
+}
 
   }
