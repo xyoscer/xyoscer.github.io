@@ -10,7 +10,8 @@
         background-size:cover;       
         background-repeat:no-repeat; 
         overflow: hidden;     
-        position: relative;      
+        position: relative; 
+        background-position: center center;     
              
 }
 
