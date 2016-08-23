@@ -4,11 +4,12 @@
  } 
  html,body{
  	height: 100%;
+ 	width: 100%;
  }
  body{
  	       
-        background-color: #fff;
-	    background-image:url("../img/bg.jpg");
+        background-color: #D3BFB4;
+	    background-image:url("../img/bg.jpg");  
         background-size:cover;       
         background-repeat:no-repeat; 
         overflow: hidden;      
@@ -17,9 +18,9 @@
  }
 
 header{
+	display: block;
 	width: 100%;	
-	margin-left: 70%; 
-	
+	margin-left: 70%;  	
   
 }
 ul{  
@@ -42,10 +43,15 @@ header>ul>li>a:hover{
 	color:yellow;
 	border-bottom: 2px solid red;
 }
+#container{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
 #profile{
 	display: inline-block;
-	margin-top: 15%; 
-	margin-left: 40% ;	
+	 margin-top: 15%; 
+	margin-left: 40% ;	 
 
 }
 #quote{
@@ -72,6 +78,10 @@ header>ul>li>a:hover{
 #footer>ul>li{
 	padding-right: 40px;
 }
+ #footer>img{
+	width: 56px;
+	height: 56px;
+} 
 #footer>ul>li>a>img:hover{
 	background-color: #fff;
 	border-radius: 100%;
@@ -94,23 +104,28 @@ header>ul>li>a:hover{
 
   }
 
-@media screen and (max-width: 768px) {
-	span{
-		 display: inline-block;
-	  }
-     body{
-     	height: 100%;
-     }
-	 /*  header>ul{
-	        display: none;
-	       } */
-
-      header{
+@media screen and (max-width: 768px) {	
+	
+  header{
       	width: 100%;
-	    margin-left: 15%; 
-      }
+	    margin-left: 25%; 
+	    font-size: 20px;
+	    
+         }
+   ul>li{
 
-    .quote{	
+	float:left;
+	padding:5px;
+
+  }
+   #profile{
+	display: inline-block;
+	margin-top: 10%; 
+	margin-left: 40% ;	
+
+   }
+  
+  .quote{	
     font-size: 25px;
 	margin-left: 5%;   
     word-spacing: 1px;
@@ -118,11 +133,71 @@ header>ul>li>a:hover{
 
      }
    #footer{		
-	margin-top: 8%;
-	margin-left: 20%;
+	margin-top: 15%;
+	margin-left: 30%;
 } 
+
    #footer>ul>li{
 	padding-right: 20px;
 }
+
+  }
+  @media screen and (max-width: 414px) {	
+	
+  header{
+      	width: 100%;
+	    margin-left: 15%; 
+	    font-size: 20px;
+	    
+         }
+   
+   #profile{
+	display: inline-block;
+	margin-top: 10%; 
+	margin-left: 30% ;	
+
+   }
+  
+    .quote{	
+    font-size: 22px;
+	margin-left: -2%;   
+    word-spacing: 1px;
+    padding:5px; 
+
+     }
+   #footer{		
+	margin-top: 15%;
+	margin-left: 20%;
+} 
+  
+
+  }
+
+ @media screen and (max-width:320px) {	
+	
+  header{
+      	width: 100%;
+	    margin-left: 3%; 
+	    font-size: 18px;
+	    
+         }
+   
+   #profile{
+	display: inline-block;
+	margin-top: 10%; 
+	margin-left: 23% ;	
+
+   }
+  
+   
+   #footer{		
+	margin-top: -3%;
+	margin-left: 15%;
+} 
+#footer>img{
+   width: 46px;
+   height: 46px;
+}
+  
 
   }
