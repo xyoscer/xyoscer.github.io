@@ -53,31 +53,27 @@
 </div>
   <script>
   if (window.Notification) {
-    var button = document.getElementById('contact'), text = document.getElementById('text');
+    var Acontact = document.getElementById('contact'), text = document.getElementById('text');
     
     var popNotice = function() {
         if (Notification.permission == "granted") {
-            var notification = new Notification("Hi，帅哥：", {
-                body: '可以加你为好友吗？',
-                icon: 'http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg'
-            });
+            var notification = new Notification("Hi，您好：", {
+                body: '扫扫加好友',
+                icon: 'http://7xyfje.com1.z1.glb.clouddn.com/xygirl.png'
+            });            
             
-            notification.onclick = function() {
-                text.innerHTML = '张小姐已于' + new Date().toTimeString().split(' ')[0] + '加你为好友！';
-                notification.close();    
-            };
         }    
     };
-    
-    button.onclick = function() {
-        if (Notification.permission == "granted") {
+    Acontact.addEventListener("click",function(){
+     if (Notification.permission == "granted") {
             popNotice();
         } else if (Notification.permission != "denied") {
             Notification.requestPermission(function (permission) {
               popNotice();
             });
         }
-    };
+    
+    },false); 
 } else {
     alert('浏览器不支持Notification');    
 }
