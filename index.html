@@ -53,13 +53,14 @@
 </div>
   <script>
   if (window.Notification) {
-    var button = document.getElementById('contact'), text = document.getElementById('text');
+    var button = document.getElementById('contact');
+    var text = document.getElementById('text');
     
     var popNotice = function() {
         if (Notification.permission == "granted") {
-            var notification = new Notification("Hi，帅哥：", {
-                body: '可以加你为好友吗？',
-                icon: 'http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg'
+            var notification = new Notification("Hi，您好：", {
+                body: '扫扫加好友',
+                icon: 'http://7xyfje.com1.z1.glb.clouddn.com/xygirl.png'
             });
             
             notification.onclick = function() {
