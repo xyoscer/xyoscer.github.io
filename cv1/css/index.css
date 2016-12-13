@@ -1,25 +1,26 @@
 body {
   background-color: #50e3c2;
+  font-family: 'Trebuchet MS';
+  line-height: 1.4;
 }
 #avatar {
   width: 256px;
   height: 256px;
-  border: 15px solid #fff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%; }
+  border: 15px solid #fff;  
+  border-radius: 50%;
+}
 
 #name {
   margin: 0.5em 0; 
 }
 
 .progect {
-  font-size: 30px;
+  font-size: 28px;
   color:white;
 }
 #taskItem {
   font-size: 26px;
+
   color:white;
 }
 #hanzi {
@@ -60,7 +61,8 @@ body {
   color:#fff;
 }
 .reveal .title {
-  margin-bottom: 1.1em; }
+  margin-bottom: 1.1em; 
+}
 
 .reveal .date {
   color: #ccc; 
@@ -68,37 +70,53 @@ body {
 
 .imgleft {
   height: 240px;
-  float: left; }
+  float: left; 
+}
 
 .pfloat {
-  overflow: hidden; }
+  overflow: hidden; 
+}
 
 .pfloat p {
-  padding-left: 20px; }
+  padding-left: 20px; 
+}
 
 .clearfix {
-  overflow: hidden; }
+  overflow: hidden; 
+}
 
 .reveal .l1 {
-  font-size: 2em; }
+  font-size: 2em; 
+}
 
 .reveal .l1 {
-  font-size: 2em; }
+  font-size: 2em; 
+}
 
 .reveal .l2 {
-  font-size: 1.5em; }
+  font-size: 1.5em; 
+}
 
 .reveal .l3 {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+   }
 
 .reveal .l4 {
-  font-size: 1em; }
+  font-size: 1em; 
+}
 
 .reveal .l5 {
-  font-size: 0.7em; }
+  font-size: 0.7em; 
+}
 
 .reveal .l6 {
-  font-size: 0.5em; }
+  font-size: 0.5em; 
+}
 
 .reveal ul {
-  font-size: 0.7em; }
+  font-size: 0.7em; 
+}
+.reveal p {
+  margin: 0;
+  line-height: 1.4;
+}
