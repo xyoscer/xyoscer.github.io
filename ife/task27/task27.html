@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">   
     <title>行星与飞船</title>
-    <link rel="stylesheet" href="less/task26.css" />
+    <link rel="stylesheet" href="less/task27.css" />
 </head>
 <body>
 <div id="descript">
     <h3>模拟虚拟宇宙</h3>
-    <a href="https://github.com/xyoscer/BaiduTask/tree/master/task26" >任务总结</a>
+    <a href="https://github.com/xyoscer/BaiduTask/tree/master/task27" >任务总结</a>
 </div>
+
 <!-- 操作面板 -->
 <div id="left">
 <div id="control">
     <div id="control-title">Control 操作面板</div>
     <div id="control-main">
+    <div id="changeModel">
+         <label for=""><strong>动力系统选择</strong></label>
+         <input type="radio" name="power" title="速率30px/s,能耗5%/s" checked  value="30,5">前进号
+        <input type="radio" name="power" title="速率50px/s,能耗7%/s"value="50,7">奔腾号
+        <input type="radio" name="power" title="速率80px/s,能耗9%/s" value="80,9">超越号<br>
+        
+        <label for=""><strong>能源系统选择</strong></label>
+        <input type="radio" name="energy" title="补充能源速率2%/s" checked  value="2">劲量型
+        <input type="radio" name="energy" title="补充能源速率3%/s" value="3">光能型
+        <input type="radio" name="energy" title="补充能源速率4%/s"value="4">永久型
+        </div>
         <div data-id="0">
-            <span>第一轨道</span>
+            <span>第一轨道</span> 
             <button  data-type="create" class="btn">创建飞船</button>
             <button  data-type="drive" disabled="disabled"  class="btn">飞行</button>
             <button  data-type="stop" disabled="disabled"  class="btn">停止</button>
-            <button  data-type="destory" disabled="disabled" class="btn">销毁飞船</button>
-            <input type="number" title="速度" placeholder="速度" value="1" disabled="disabled" class="form-control"/>
-            <button data-type="rate" disabled="disabled"  class="btn">设置速度</button>
+            <button  data-type="destory" disabled="disabled" class="btn">销毁飞船</button>           
+         
         </div>
         <div data-id="1">
             <span>第二轨道</span>
@@ -30,8 +41,7 @@
             <button  data-type="drive" disabled="disabled"  class="btn">飞行</button>
             <button  data-type="stop" disabled="disabled"  class="btn">停止</button>
             <button  data-type="destory" disabled="disabled" class="btn">销毁飞船</button>
-            <input type="number" title="速度" placeholder="速度" value="1" disabled="disabled" class="form-control"/>
-            <button data-type="rate" disabled="disabled"  class="btn">设置速度</button>
+          
         </div>
         <div data-id="2">
             <span>第三轨道</span>
@@ -39,8 +49,7 @@
             <button  data-type="drive" disabled="disabled"  class="btn">飞行</button>
             <button  data-type="stop" disabled="disabled"  class="btn">停止</button>
             <button  data-type="destory" disabled="disabled" class="btn">销毁飞船</button>
-            <input type="number" title="速度" placeholder="速度" value="1" disabled="disabled" class="form-control"/>
-            <button data-type="rate" disabled="disabled"  class="btn">设置速度</button>
+          
         </div>
         <div data-id="3">
             <span>第四轨道</span>
@@ -48,8 +57,7 @@
             <button  data-type="drive" disabled="disabled"  class="btn">飞行</button>
             <button  data-type="stop" disabled="disabled"  class="btn">停止</button>
             <button  data-type="destory" disabled="disabled" class="btn">销毁飞船</button>
-            <input type="number" title="速度" placeholder="速度" value="1" disabled="disabled" class="form-control"/>
-            <button data-type="rate" disabled="disabled"  class="btn">设置速度</button>
+         
         </div>
     </div>
 </div>
@@ -76,11 +84,11 @@
 
 </div>
 
-
+<script src="js/Mediator.js"></script> 
  <script src="js/commander.js"></script>
  <script src="js/main.js"></script> 
 <script src="js/createShip.js"></script>
-<script src="js/spaceManager.js"></script> 
+
 
 </body>
 </html>
