@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>H5实现手解屏效果</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<script type="text/javascript" src="MD5.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+<script type="text/javascript">
+    var lock = new Lock({
+        RowcircleNum: 3,// 定制输入页面的圆圈的的行数与列数
+        outCircleColor:"#FFA724", // 定制解锁圆圈的颜色
+        innerCircleColor:"red",
+        lineColor:"red",   // 定制解锁圆圈中线的颜色
+        lineWidth:"2"      // 线的宽度
+    });
+    //  订阅设置密码和验证密码消息
+    lock.on('setPwd', function(){
+         console.log('设置密码操作');
+    });
+    lock.on('verifyPwd', function(){
+         console.log('验证密码操作');
+    });
+
+
+</script>
+</body>
+</html>
