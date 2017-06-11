@@ -1,0 +1,1 @@
+myservice.setReportInfo({time:"2017-04-27 11:25:27",startTime:"2017-04-5",endTime:"2017-06-5"});

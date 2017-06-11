@@ -1,0 +1,59 @@
+<div class="container"  ng-controller="indexCtrl">
+    <div class= "row">
+        <h1 class="catalog_title">1.全局统计</h1>
+        <section>
+            <div  id="vuln_dis" class="vuln_dis_table" style="width: 400px;height:260px;">
+            </div>
+            <div id="vuln_table" class="vuln_dis_table">
+                <table class="table table-hover">
+                    <caption class="risk_title">漏洞Tops5</caption>
+                    <thead>
+                    <tr class="info"><th>漏洞名称</th><th>风险等级</th><th>资产个数</th></tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="items in vuls" ng-click="getTableDetail(items)">
+                        <td>{{items.name}}</td>
+                        <td>{{items.level}}</td>
+                        <td>{{items.num}}</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+    </div>
+    <div class= "row">
+        <h1 class="catalog_title">2.漏洞分布</h1>
+        <section>
+            <div class="vuls_web_asset">
+                 <select  class="form-control">
+                     <option value="0" >应用</option>
+                     <option value="1" selected>威胁</option>
+                     <option value="2">系统</option>
+                     <option value="3">服务</option>
+                 </select>
+                <div id="vuls_web" style="width:400px;height:300px"></div>
+
+             </div>
+             <div class="vuls_web_asset" id="vuls_asset" style="width:400px;height:300px;border:1px solid green">资产组漏洞分布</div>
+       </section>
+
+
+    </div>
+    <div class= "row">
+        <h1 class="catalog_title">3.漏洞分类统计</h1>
+        <div class="select-if">
+            <ul class="group">
+                <li ng-click="num_risk_vuls_switch('num')" ng-class= "{'selecting':selected_status['num']}" >应用</li>
+                <li ng-click="num_risk_vuls_switch('risk')" ng-class= "{'selecting':selected_status['risk']}">威胁</li>
+                <li ng-click="num_risk_vuls_switch('vuls')" ng-class= "{'selecting':selected_status['vuls']}">系统</li>
+                <li ng-click="num_risk_vuls_switch('vuls')" ng-class= "{'selecting':selected_status['vuls']}">服务</li>
+            </ul>
+        </div>
+        <div  style="width:900px;height:300px;border:1px solid #eee;" id="asset_group_trend"></div>
+
+    </div>
+</div>
+
