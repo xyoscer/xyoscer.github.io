@@ -1,1 +1,0 @@
-myservice.setHostInfo({hostAssetnum:2e3,hostRiskValue:5.5,highVuls:5,midVuls:2,lowVuls:1});

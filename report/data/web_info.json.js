@@ -1,1 +1,0 @@
-myservice.setWebInfo({webAssetnum:1e3,webRiskValue:3.5,riskFactor:"very danger",highVuls:15,midVuls:12,lowVuls:8});

@@ -1,1 +1,0 @@
-myservice.setVulEventTotal({vulTotalCount:{sys:18790,web:849},vulHigh:{sys:8844,web:542},vulMedium:{sys:8448,web:135},vulLow:{sys:1498,web:172}});
